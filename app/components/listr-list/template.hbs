@@ -1,6 +1,10 @@
 <h3 class="list-header" {{action 'toggleListDetail'}}>{{list.title}}</h3>
 <ol>
   {{#each list.items as |item|}}
-    {{listr-list/item item=item}}
+    {{listr-list/item item=item
+                      toggleDone='toggleItemDone'
+                      delete='deleteItem'}}
   {{/each}}
 </ol>
+
+{{!-- toggleDone comes from item/component.js and then runs toggleItemDone which is in listr-list/component.js --}}

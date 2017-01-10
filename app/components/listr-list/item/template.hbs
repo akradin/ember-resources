@@ -1,1 +1,5 @@
 <span class="list-item" {{action 'toggleDone'}}>{{item.content}}</span>
+<button type="button" class="btn btn-xs btn-danger" {{action 'delete'}}>
+  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+</button>
+{{!-- toggleDone is an action that  is defined in the component .js file --}}
