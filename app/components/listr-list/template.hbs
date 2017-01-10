@@ -7,4 +7,9 @@
   {{/each}}
 </ol>
 
+<form {{action 'createItem' on='submit'}}>
+  {{input placeholder="New Item"
+          value=newItem.content}}
+  <button type="submit">Create New Item</button>
+</form>
 {{!-- toggleDone comes from item/component.js and then runs toggleItemDone which is in listr-list/component.js --}}
