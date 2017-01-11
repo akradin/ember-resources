@@ -1,0 +1,6 @@
+<form {{action 'updateTitle' on="submit"}}>
+{{input placeholder="list title"
+        value=list.title}}
+<button class="btn btn-default" type="submit">Edit</button>
+<button class="btn btn-danger" {{action 'cancel'}}>Cancel</button>
+</form>
