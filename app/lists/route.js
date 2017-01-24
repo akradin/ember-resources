@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     updateTitle(list){
       console.log("is list ", list);
       this.transitionTo('list/edit', list);
+    },
+    deleteList(list){
+      list.destroyRecord();
     }
   }
 

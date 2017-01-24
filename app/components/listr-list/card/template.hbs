@@ -3,5 +3,7 @@
     {{list.title}}
   </h4>
 {{/link-to}}
-
-  <button class="btn btn-default" {{action 'updateTitle'}}>Edit Button</button>
+{{#if isEmpty}}
+<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+{{/if}}
+  <button class="btn btn-default" {{action 'updateTitle'}}>Edit</button>

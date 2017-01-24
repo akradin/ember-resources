@@ -1,5 +1,9 @@
 <h2>ListR</h2>
 {{#each model as |list|}}
   {{listr-list/card list=list
-                    updateTitle='updateTitle'}}
+                    updateTitle='updateTitle'
+                    delete='deleteList'}}
 {{/each}}
+<button class="btn btn-default">
+{{#link-to 'lists/new'}}New{{/link-to}}
+</button>

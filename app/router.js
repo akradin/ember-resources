@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function () {
   this.route('lists');
+  this.route('lists/new');
   this.route('list', {path:'lists/:list_id'});
   this.route('list/edit', { path: 'lists/:list_id/edit'});
   //         ^^file structure       ^^^url hit by user
